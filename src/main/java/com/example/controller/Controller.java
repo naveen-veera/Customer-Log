@@ -23,6 +23,11 @@ public class Controller {
 	
 	static DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 	
+	@GetMapping("/")
+	public String returnWelcome() {
+		return "REST Server Started, and running in port 8080";
+		
+	}
 
 
 	@GetMapping("/checkIn")
